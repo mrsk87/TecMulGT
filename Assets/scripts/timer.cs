@@ -7,7 +7,7 @@ public class timer : MonoBehaviour
 {
     public Text timerText;
     private float startTime;
-    public bool finnished = false;
+    private bool finnished = false;
 
     public static timer Instance;
     // Start is called before the first frame update
@@ -28,7 +28,7 @@ public class timer : MonoBehaviour
         timerText.text = minutes + ":" + seconds;
     }
 
-    public void Finish() {
+    public void Finnish() {
         finnished = true;
         timerText.color = Color.yellow;
     }

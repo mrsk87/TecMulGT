@@ -7,13 +7,13 @@ public class GameController : MonoBehaviour
     public int numberCollectables;
     public GameObject endMessage;
 
-    timer _timer;
+    
     
     // Start is called before the first frame update
     void Start()
     {
-        numberCollectables = 4;
-        _timer = timer.Instance; 
+        numberCollectables = 1;
+        
         }
 
     // Update is called once per frame
@@ -22,7 +22,7 @@ public class GameController : MonoBehaviour
         //Display Game Over message
         if (numberCollectables == 0)
         {
-            _timer.Finish();
+            timer.Instance.Finnish();
             endMessage.SetActive(true);
         }
     }
