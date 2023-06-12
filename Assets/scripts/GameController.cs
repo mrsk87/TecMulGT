@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        numberCollectables = 1;
+        numberCollectables = 16;
         
         }
 
